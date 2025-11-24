@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: "Geist";
+    src: url('/fonts/Geist-VariableFont_wght.ttf') format("TrueType");
+}
+
+
+@layer base {
+    .layout {
+        @apply px-8 md:px-14 lg:px-20;
+    }
+}
+
+@theme {
+    --color-bg1: #F7F4EB;
+    --color-bg2: #0D1F08;
+    --color-bg3: #1F0808;
+    --color-para1: #000;
+    --color-para2: #fff;
+    --color-btn1: #31110f;
+    --color-Highlight: #fff0c4;
+}
+
+body {
+    font-family: "Geist", sans;
+}

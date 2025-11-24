@@ -1,7 +1,7 @@
 import React from "react";
 
 const MainFooter = () => {
-  return <div>MainFooter</div>;
+  return <section></section>;
 };
 
 export default MainFooter;
