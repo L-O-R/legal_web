@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 @font-face {
     font-family: "Geist";
     src: url('/fonts/Geist-VariableFont_wght.ttf') format("TrueType");
@@ -9,6 +11,26 @@
 @layer base {
     .layout {
         @apply px-8 md:px-14 lg:px-20;
+    }
+}
+
+@layer components {
+    .swiper-button-disabled {
+        @apply opacity-40 cursor-not-allowed pointer-events-none;
+    }
+
+    .swiper-button-disabled svg path {
+        @apply stroke-gray-400;
+    }
+
+    /* Default dot */
+    .swiper-pagination-bullet {
+        @apply !w-4 !h-4 bg-gray-300 rounded-full opacity-60 transition-all duration-300;
+    }
+
+    /* Active dot */
+    .swiper-pagination-bullet-active {
+        @apply !w-14 !h-4 bg-black !rounded-xl opacity-100;
     }
 }
 

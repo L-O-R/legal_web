@@ -1,32 +1,21 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+
+import Slider from "../Slider";
 const Testimonials = () => {
   return (
-    <div className="py-20 max-w-4xl mx-auto">
-      <Swiper
-        modules={[Navigation, Pagination]}
-        spaceBetween={50}
-        slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}>
-        <SwiperSlide>
-          <h1 className="min-h-[40vh]">1</h1>
-        </SwiperSlide>
-        <SwiperSlide>
-          <h1 className="min-h-[40vh]">1</h1>
-        </SwiperSlide>
-        <SwiperSlide>
-          <h1 className="min-h-[40vh]">1</h1>
-        </SwiperSlide>
-        <SwiperSlide>
-          <h1 className="min-h-[40vh]">1</h1>
-        </SwiperSlide>
-      </Swiper>
-    </div>
+    <section className="layout py-16 lg:py-24">
+      <header className="flex items-center justify-center flex-col gap-4">
+        <h2 className="text-2xl lg:text-4xl font-medium">
+          Hear From Our Clients
+        </h2>
+        <p className="text-lg lg:text-xl max-w-xl text-center">
+          We believe that our clients' experiences speak
+          volumes about the quality of our legal services.
+          Here's what some of them have to say:
+        </p>
+      </header>
+      <Slider />
+    </section>
   );
 };
 
